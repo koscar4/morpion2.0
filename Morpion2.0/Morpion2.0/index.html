@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morpion 2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Morpion 2.0</h1>
+
+    <div class="layout">
+      <section class="panel">
+        <div class="choice-row">
+          <label for="player1Skin">Joueur 1</label>
+          <select id="player1Skin"></select>
+        </div>
+        <div class="preview-row">
+          <span>Apercu J1</span>
+          <div id="player1Preview" class="skin-preview"></div>
+        </div>
+        <div class="choice-row">
+          <label for="player2Skin">Joueur 2</label>
+          <select id="player2Skin"></select>
+        </div>
+        <div class="preview-row">
+          <span>Apercu J2</span>
+          <div id="player2Preview" class="skin-preview"></div>
+        </div>
+        <div class="actions">
+          <button id="startBtn" type="button">Demarrer</button>
+          <button id="resetBtn" type="button">Rejouer</button>
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <p id="status" class="status">Choisissez vos symboles puis lancez la partie.</p>
+        <section class="board" id="board" aria-label="Grille du morpion"></section>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
